@@ -2,8 +2,9 @@
   "expo": {
     "name": "Datepicker",
     "slug": "Datepicker",
-    "version": "1.0.0",
-    "orientation": "portrait",
+    "scheme": "https",
+     "version": "1.0.0",
+     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -21,10 +22,21 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+        
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "serviceWorker": {
+        "provider": "v8"
+      },
+        "browsers": ["Chrome"]
+      
+    },
+    "extra": {
+      "eas": {
+        "projectId": "93958630-984b-43b6-88c1-5bc8e991121e"
+      }
     }
   }
 }
